@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --color-primary: #fd6e0a;
+  --color-secondary: #fff8f3;
+  --color-dark-gray: #474747;
+}
+
+.btn {
+  border: none;
+  padding: 18px 36px;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  color: var(--color-primary);
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--color-secondary);
+  /* TODO: developer image need to be fixed */
+  background: url(./images/header_bg.png) bottom right, url(./images/developer.png);
+  background-repeat: no-repeat;
+}
+.header nav {
+  padding: 30px 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.header ul li {
+  margin-right: 50px;
+}
+
+/* Navigation */
+.nav-link {
+  font-weight: 400px;
+  cursor: pointer;
+  color: var(--color-dark-gray);
+}
+.nav-title {
+  font-weight: 800;
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+.nav-title span {
+  color: var(--color-primary);
+}
+
+/* Banner Styles */
+.banner {
+  padding-left: 230px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-left h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--color-dark-gray)
+}
+.banner-left h1 {
+    font-weight: 600;
+    font-size: 85px;
+}
+
+.banner-left-text {
+    margin: 20px 0;
+    line-height: 30px;
+}
+.banner-left-btn button{
+    margin-right: 20px;
+}
+
+.banner-right img {
+    width: 584px;
+    height: 710px;
+}
+
+
+/* About Me section design */
+.about {
+    margin: 130px 230px;
+    padding: 130px 155px;
+    background-color: var(--color-secondary);
+}
+.about-text {
+    text-align: center;
+}
+.about-text h2 {
+    margin-bottom: 30px;
+}
+
+.about-point {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+}
