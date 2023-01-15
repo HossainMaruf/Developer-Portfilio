@@ -32,7 +32,8 @@
 .header {
   background-color: var(--color-secondary);
   /* TODO: developer image need to be fixed */
-  background: url(./images/header_bg.png) bottom right, url(./images/developer.png);
+  background: url(./images/header_bg.png) bottom right,
+    url(./images/developer.png);
   background-repeat: no-repeat;
 }
 .header nav {
@@ -76,45 +77,141 @@
   align-items: center;
 }
 .banner-left h2 {
-    font-size: 45px;
-    font-weight: 600;
-    color: var(--color-dark-gray)
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--color-dark-gray);
 }
 .banner-left h1 {
-    font-weight: 600;
-    font-size: 85px;
+  font-weight: 600;
+  font-size: 85px;
 }
 
 .banner-left-text {
-    margin: 20px 0;
-    line-height: 30px;
+  margin: 20px 0;
+  line-height: 30px;
 }
-.banner-left-btn button{
-    margin-right: 20px;
+.banner-left-btn button {
+  margin-right: 20px;
 }
 
 .banner-right img {
-    width: 584px;
-    height: 710px;
+  width: 584px;
+  height: 710px;
 }
-
 
 /* About Me section design */
+main {
+  background-color: #ffffff;
+}
 .about {
-    margin: 130px 230px;
-    padding: 130px 155px;
-    background-color: var(--color-secondary);
+  margin: 130px 230px;
+  padding: 130px 155px;
+  background-color: var(--color-secondary);
 }
 .about-text {
-    text-align: center;
+  text-align: center;
 }
 .about-text h2 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .about-point {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* skill section desing */
+.skill {
+  margin: 130px 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill p {
+  margin: 30px 0;
+  text-align: center;
+}
+.skill-card {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 24%;
+  height: 370px;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: left;
+  background: #ffffff;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+
+.card p {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Resume Section */
+.resume {
+  margin: 130px 230px;
+}
+
+.resume .btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.resume > h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.resume > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.education,
+.experience {
+  width: 49%;
+}
+.education > h2,
+.experience > h2 {
+  margin-bottom: 20px;
+}
+.education-single > h4,
+.experience-single > h4 {
+  margin: 10px 0px;
+  color: var(--color-dark-gray);
+}
+
+hr {
+  margin: 20px 0;
+}
+
+/* Footer Design */
+footer {
+  padding: 130px 230px;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+}
+footer > div {
+    width: 49%;
+}
+footer h2,
+.contact p {
+    margin-bottom: 20px;
+}
+input[type=text],
+input[type=email],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
 }
