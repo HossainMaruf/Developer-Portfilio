@@ -199,6 +199,13 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+.social-btn {
+  padding: 10px 20px;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
 footer > div {
     width: 49%;
 }
